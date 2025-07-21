@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lexend:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DynaPuff", sans-serif;
+}
+
+body{
+    background-image: url('imgs/pinkbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainContainer{
+    background-color: rgb(254, 249, 243);
+    margin: 2rem auto;
+    width: 40%;
+    height: auto;
+    border: 3px solid palevioletred;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.imgContainer{
+    margin: auto;
+    width: 50%;
+    border: 3px solid palevioletred;
+    border-radius: 20px;
+}
+
+.imgContainer img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+h1{
+    color: palevioletred;
+}
+
+.textContainer{
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1, p{
+    margin: 1rem;
+}
+
+button{
+    background-color: hsl(350, 100%, 88%);
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 5px 4px 10px rgb(104, 103, 103);
+}
+
+button:active{
+    background-color: hsl(350, 100%, 78%);
+    transform: scale(.90);
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
