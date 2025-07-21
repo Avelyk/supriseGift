@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- w3.css CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Google fonts api  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+    <!-- LOCAL CSS STYLE FILES -->
+    <link rel="stylesheet" type="text/css" href="css/horizontal-img-scroll.css" />
+
+    <title>photography Website | Horizontal Img Gallery</title>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-text-black" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="../OPENING/index.html" class="w3-bar-item w3-hover-black w3-button">HOME</a>
+        <a href="../K & L/horizontal-img-scroll.html" class="w3-bar-item w3-button w3-hide-small"
+        ><i class='bx bxs-heart'></i>
+        K & L</a
+      >
+        <a href="../Kyle/horizontal-img-scroll.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> KYLE</a
+        >
+        <a href="../2nd phto/horizontal-img-scroll.html" class="w3-bar-item w3-button w3-hide-small"
+        ><i class="fa fa-user"></i> LORJI</a
+      >
+        <a href="../Wami/horizontal-img-scroll.html" class="w3-bar-item w3-button w3-hide-small"
+        ><i class="ph ph-cat"></i>WAMI</a
+      >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+      <a
+      href="../K & L/horizontal-img-scroll.html"
+      class="w3-bar-item w3-button"
+      onclick="toggleFunction()"
+      >K & L</a
+    >
+        <a
+          href="../Kyle/horizontal-img-scroll.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >KYLE</a
+        >
+        <a
+        href="../2nd phto/horizontal-img-scroll.html"
+        class="w3-bar-item w3-button"
+        onclick="toggleFunction()"
+        >LORJI</a
+      >
+        <a
+          href="../Wami/horizontal-img-scroll.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >WAMI</a
+        >
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span
+          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" id="city-life"
+          >WELCOME <span class="w3-hide-small">| FRIENDS</span></span
+        >
+      </div>
+    </div>
+
+    <!-- horizontal scrolling  -->
+
+    <h3 class="w3-center"id="portfolio">PICTURES OF FWENDS</h3>
+    
+    <div id="scroll">
+      <img src="img/unnamed-16.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 16" />
+      <img src="img/unnamed-17.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 17" />
+      <img src="img/unnamed-18.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 18" />
+      <img src="img/unnamed-19.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 19" />
+      <img src="img/unnamed-20.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 20" />
+      <img src="img/unnamed-21.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 21" />
+      <img src="img/unnamed-22.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 22" />
+      <img src="img/unnamed-23.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 23" />
+      <img src="img/unnamed-24.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 24" />
+      <img src="img/unnamed-25.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 25" />
+      <img src="img/unnamed-26.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 26" />
+      <img src="img/unnamed-27.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 27" />
+</div>
+
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-display-topright" title="Close Modal Image"
+          ><i class="fas fa-times"></i> Close</span
+        >
+        <div
+          class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
+        >
+          <img id="img01" class="w3-image" />
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+    </div>
+
+     <!-- SECOND SECTION FOR horizontal scrolling  -->
+     <div id="scroll">
+      <img src="img/unnamed-4.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 4" />
+      <img src="img/unnamed-5.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 5" />
+      <img src="img/unnamed-6.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 6" />
+      <img src="img/unnamed-7.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 7" />
+      <img src="img/unnamed-8.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 8" />
+      <img src="img/unnamed-9.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 9" />
+      <img src="img/unnamed-10.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 10" />
+      <img src="img/unnamed-11.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 11" />
+      <img src="img/unnamed-12.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 12" />
+      <img src="img/unnamed-13.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 13" />
+      <img src="img/unnamed-14.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 14" />
+      <img src="img/unnamed-15.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 15" />
+
+ 
+       <!-- Modal for full size images on click-->
+       <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+         <span class="w3-button w3-display-topright" title="Close Modal Image"
+           ><i class="fas fa-times"></i> Close</span
+         >
+         <div
+           class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
+         >
+           <img id="img01" class="w3-image" />
+           <p id="caption" class="w3-opacity w3-large"></p>
+         </div>
+       </div>
+     </div>
+
+     <!-- THIRD SECTION FOR horizontal scrolling  -->
+     <div id="scroll">
+      <img src="img/unnamed-28.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 28" />
+      <img src="img/unnamed-29.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 29" />
+      <img src="img/unnamed-30.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 30" />
+      <img src="img/unnamed-31.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 31" />
+      <img src="img/unnamed-32.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 32" />
+      <img src="img/unnamed-33.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 33" />
+      <img src="img/unnamed-34.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 34" />
+      <img src="img/unnamed-35.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 35" />
+      <img src="img/unnamed-36.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 36" />
+      <img src="img/unnamed-37.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 37" />
+      <img src="img/unnamed-38.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 38" />
+      <img src="img/unnamed-39.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 39" />
+      <img src="img/unnamed-40.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo 40" />
+       <!-- Modal for full size images on click-->
+       <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+         <span class="w3-button w3-display-topright" title="Close Modal Image"
+           ><i class="fas fa-times"></i> Close</span
+         >
+         <div
+           class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
+         >
+           <img id="img01" class="w3-image" />
+           <p id="caption" class="w3-opacity w3-large"></p>
+         </div>
+       </div>
+     </div>
+    
+
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">I BLED FOR ROBLOX</h3>
+      <p class="w3-center"><em><b>-BENRNIE</b> </em></p>
+      <h3 class="w3-center">She broke fall from a cliff but the liquid inside her was a waste. So in the land, I licked the land fervently reminiscing my moments with my cutiepie caffeine.</h3>
+      <p class="w3-center"><em><b>-JOSHUA</b> </em></p>
+     
+
+ 
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
